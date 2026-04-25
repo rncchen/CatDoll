@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 去背快取（執行時自動產生）
+.cache/
+
+# PyInstaller 輸出
+build/
+dist/
+*.spec
+
+# 環境
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# 測試 / 暫存
+preview*.png
+*.tmp
