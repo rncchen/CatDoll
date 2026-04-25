@@ -196,7 +196,10 @@ class CatWindow(QWidget):
         self.left_frames = left_raw
         self.right_frames = right_raw
         self.sleep_frames = sleep_raw
-        self.tray_icon_pixmap = sleep_raw[0]
+        self.tray_icon_pixmap = QPixmap(asset_path("icon.png"))
+        if self.tray_icon_pixmap.isNull():
+            self.tray_icon_pixmap = sleep_raw[0]
+        self.setWindowIcon(QIcon(self.tray_icon_pixmap))
 
         self.max_frame_w = max(f.width() for f in left_raw + right_raw + sleep_raw)
 
