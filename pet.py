@@ -32,7 +32,7 @@ def asset_path(name: str) -> str:
 def cache_dir() -> str:
     if hasattr(sys, "_MEIPASS"):
         base = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")
-        d = os.path.join(base, "CatPet")
+        d = os.path.join(base, "CatDoll")
     else:
         d = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache")
     os.makedirs(d, exist_ok=True)

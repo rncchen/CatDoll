@@ -10,7 +10,7 @@ You can drag the cat with your mouse. A system tray icon lets you wake the cat, 
 
 - Windows 10 / 11
 - For development: Python 3.10+, PySide6, numpy
-- For end users: just run the bundled `CatPet.exe` — **no Python or dependencies needed**
+- For end users: just run the bundled `CatDoll.exe` — **no Python or dependencies needed**
 
 ## Controls
 
@@ -35,7 +35,7 @@ The first run takes a few seconds to remove the white background from the sprite
 build.bat
 ```
 
-This produces `dist/CatPet.exe` (~35 MB). Double-click to run; the target machine does not need Python.
+This produces `dist/CatDoll.exe` (~35 MB). Double-click to run; the target machine does not need Python.
 
 `build.bat` will:
 1. Install / update `requirements.txt` and PyInstaller
@@ -88,7 +88,7 @@ Sprite art generated with OpenAI's GPT-Image (Image 2) feature.
 
 - Windows 10 / 11
 - 開發：Python 3.10+，PySide6、numpy
-- 終端使用者:直接執行打包好的 `CatPet.exe`，**不需要安裝任何東西**
+- 終端使用者:直接執行打包好的 `CatDoll.exe`，**不需要安裝任何東西**
 
 ## 操作
 
@@ -113,11 +113,11 @@ python pet.py
 build.bat
 ```
 
-完成後產出 `dist/CatPet.exe`（約 35 MB）。雙擊即可執行，目標機器不需要 Python。
+完成後產出 `dist/CatDoll.exe`（約 35 MB）。雙擊即可執行，目標機器不需要 Python。
 
 `build.bat` 內部會：
 1. 安裝 / 更新 `requirements.txt` 與 PyInstaller
-2. 用 `pyinstaller --onefile --windowed` 把 Python runtime、PySide6、三張 PNG 全部包進 `CatPet.exe`
+2. 用 `pyinstaller --onefile --windowed` 把 Python runtime、PySide6、三張 PNG 全部包進 `CatDoll.exe`
 
 ## 自訂
 
